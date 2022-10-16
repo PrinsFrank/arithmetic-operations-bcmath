@@ -1,0 +1,17 @@
+{
+    "name": "prinsfrank/arithmetic-operations-bcmath",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "PrinsFrank\\ArithmeticOperationsBCMath\\": "src/"
+        }
+    },
+    "require": {
+        "prinsfrank/arithmetic-operations": "^0.1.0",
+        "ext-bcmath": "*"
+    },
+    "provide": {
+        "prinsfrank/arithmetic-operations": "0.1"
+    }
+}
