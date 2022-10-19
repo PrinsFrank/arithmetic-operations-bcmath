@@ -7,7 +7,7 @@ use PrinsFrank\ArithmeticOperations\ArithmeticOperations;
 
 class ArithmeticOperationsBCMath implements ArithmeticOperations
 {
-    public function __construct(protected ?int $precision)
+    public function __construct(protected ?int $precision = null)
     {
     }
 
