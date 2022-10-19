@@ -7,6 +7,11 @@
             "PrinsFrank\\ArithmeticOperationsBCMath\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "PrinsFrank\\ArithmeticOperationsBCMath\\Tests\\": "tests/"
+        }
+    },
     "require": {
         "prinsfrank/arithmetic-operations": "^0.1.0",
         "ext-bcmath": "*"
@@ -16,9 +21,11 @@
     },
     "scripts": {
         "cs": "php-cs-fixer fix --allow-risky=yes --dry-run",
-        "cs:fix": "php-cs-fixer fix --allow-risky=yes"
+        "cs:fix": "php-cs-fixer fix --allow-risky=yes",
+        "unit": "phpunit --testsuite=Unit"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.12"
+        "friendsofphp/php-cs-fixer": "^3.12",
+        "phpunit/phpunit": "^9.5"
     }
 }
